@@ -175,8 +175,12 @@ class Portfolio {
     }
     
     handleButtonClick(e) {
-        e.preventDefault();
         const button = e.target;
+        
+        // Only prevent default for buttons without href (not actual links)
+        if (!button.href) {
+            e.preventDefault();
+        }
         
         // Create ripple effect
         const ripple = document.createElement('span');
@@ -203,9 +207,9 @@ class Portfolio {
         button.style.overflow = 'hidden';
         button.appendChild(ripple);
         
-        // Show feedback for placeholder buttons
+        // Show feedback for placeholder buttons (only non-link buttons)
         const buttonText = button.textContent;
-        if (buttonText === 'Live Demo' || buttonText === 'Source Code') {
+        if (!button.href && (buttonText === 'Live Demo' || buttonText === 'Source Code')) {
             button.style.background = 'rgba(0, 112, 243, 0.8)';
             setTimeout(() => {
                 if (button.classList.contains('btn--primary')) {
