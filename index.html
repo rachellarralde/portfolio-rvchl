@@ -1,196 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rachel Larralde - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body data-color-scheme="dark">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-color-scheme="dark">
     <!-- Header Navigation -->
     <header class="header">
-        <nav class="nav">
-            <div class="nav__brand">
-                <h2>Rachel Larralde</h2>
-            </div>
-            <ul class="nav__menu">
-                <li><a href="#home" class="nav__link active" data-tab="home">Home</a></li>
-                <li><a href="#qa-engineer" class="nav__link" data-tab="qa-engineer">QA Engineer</a></li>
-                <li><a href="#fullstack" class="nav__link" data-tab="fullstack">Full-Stack Developer</a></li>
-                <li><a href="#contact" class="nav__link" data-tab="contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="nav">
+        <div class="nav__brand">
+          <h2>Rachel Larralde</h2>
+        </div>
+        <ul class="nav__menu">
+          <li>
+            <a href="#home" class="nav__link active" data-tab="home">Home</a>
+          </li>
+          <li>
+            <a href="#qa-engineer" class="nav__link" data-tab="qa-engineer"
+              >QA Engineer</a
+            >
+          </li>
+          <li>
+            <a href="#fullstack" class="nav__link" data-tab="fullstack"
+              >Full-Stack Developer</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav__link" data-tab="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Main Content -->
     <main class="main">
-        <!-- Home Section -->
-        <section id="home" class="section section--hero active">
-            <div class="container">
-                <div class="hero">
-                    <h1 class="hero__title">Building Quality Software & Experiences</h1>
-                    <p class="hero__subtitle">Passionate about creating robust, scalable applications and ensuring software quality through comprehensive testing strategies. Experienced in both QA engineering and full-stack development.</p>
-                    <div class="hero__location">
-                        <span>Los Angeles, CA</span>
-                    </div>
-                </div>
+      <!-- Home Section -->
+      <section id="home" class="section section--hero active">
+        <div class="container">
+          <div class="hero">
+            <h1 class="hero__title">Building Quality Software & Experiences</h1>
+            <p class="hero__subtitle">
+              Passionate about creating robust, scalable applications and
+              ensuring software quality through comprehensive testing
+              strategies. Experienced in both QA engineering and full-stack
+              development.
+            </p>
+            <div class="hero__location">
+              <span>Los Angeles, CA</span>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- QA Engineer Section -->
-        <section id="qa-engineer" class="section">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">QA Engineering Projects</h2>
+      <!-- QA Engineer Section -->
+      <section id="qa-engineer" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">QA Engineering Projects</h2>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-card__content">
+                <h3 class="project-card__title">Automated E2E Testing Suite</h3>
+                <p class="project-card__description">
+                  Comprehensive end-to-end testing framework built with
+                  Playwright, covering critical user journeys across multiple
+                  browsers and devices with automated CI/CD integration.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-badge">Playwright</span>
+                  <span class="tech-badge">TypeScript</span>
+                  <span class="tech-badge">GitHub Actions</span>
+                  <span class="tech-badge">Docker</span>
                 </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">Automated E2E Testing Suite</h3>
-                            <p class="project-card__description">Comprehensive end-to-end testing framework built with Playwright, covering critical user journeys across multiple browsers and devices with automated CI/CD integration.</p>
-                            <div class="project-card__tech">
-                                <span class="tech-badge">Playwright</span>
-                                <span class="tech-badge">TypeScript</span>
-                                <span class="tech-badge">GitHub Actions</span>
-                                <span class="tech-badge">Docker</span>
-                            </div>
-                            <div class="project-card__actions">
-                                <button class="btn btn--primary btn--sm">Live Demo</button>
-                                <button class="btn btn--outline btn--sm">Source Code</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">Test Analytics Dashboard</h3>
-                            <p class="project-card__description">Real-time dashboard for test results visualization, featuring metrics tracking, failure analysis, and performance monitoring with interactive charts and reports.</p>
-                            <div class="project-card__tech">
-                                <span class="tech-badge">React</span>
-                                <span class="tech-badge">D3.js</span>
-                                <span class="tech-badge">Node.js</span>
-                                <span class="tech-badge">MongoDB</span>
-                            </div>
-                            <div class="project-card__actions">
-                                <button class="btn btn--primary btn--sm">Live Demo</button>
-                                <button class="btn btn--outline btn--sm">Source Code</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">QA Community Forum</h3>
-                            <p class="project-card__description">Platform for QA professionals to share knowledge, discuss testing strategies, and collaborate on best practices with user authentication and content moderation.</p>
-                            <div class="project-card__tech">
-                                <span class="tech-badge">Vue.js</span>
-                                <span class="tech-badge">Express.js</span>
-                                <span class="tech-badge">PostgreSQL</span>
-                                <span class="tech-badge">Redis</span>
-                            </div>
-                            <div class="project-card__actions">
-                                <button class="btn btn--primary btn--sm">Live Demo</button>
-                                <button class="btn btn--outline btn--sm">Source Code</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project-card__actions">
+                  <a
+                    href="https://output.com/arcade"
+                    target="_blank"
+                    class="btn btn--primary btn--sm"
+                    >Website</a
+                  >
                 </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Full-Stack Developer Section -->
-        <section id="fullstack" class="section">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Full-Stack Development Projects</h2>
+            <div class="project-card">
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  Test Analytics Dashboard (Internal Project)
+                </h3>
+                <p class="project-card__description">
+                  Real-time dashboard for test results visualization, featuring
+                  metrics tracking, failure analysis, and performance monitoring
+                  with interactive charts and reports.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-badge">Next.js</span>
+                  <span class="tech-badge">D3.js</span>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">MongoDB</span>
                 </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">Portfolio Website</h3>
-                            <p class="project-card__description">Modern, responsive portfolio website built with clean architecture and SpaceX-inspired design, featuring smooth animations and optimized performance.</p>
-                            <div class="project-card__tech">
-                                <span class="tech-badge">HTML5</span>
-                                <span class="tech-badge">CSS3</span>
-                                <span class="tech-badge">JavaScript</span>
-                                <span class="tech-badge">GitHub Pages</span>
-                            </div>
-                            <div class="project-card__actions">
-                                <button class="btn btn--primary btn--sm">Live Demo</button>
-                                <button class="btn btn--outline btn--sm">Source Code</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">Get Flicked</h3>
-                            <p class="project-card__description">iOS mobile application for personalized movie recommendations using machine learning algorithms and social features for sharing reviews with friends.</p>
-                            <div class="project-card__tech">
-                                <span class="tech-badge">Swift</span>
-                                <span class="tech-badge">SwiftUI</span>
-                                <span class="tech-badge">Core ML</span>
-                                <span class="tech-badge">Firebase</span>
-                            </div>
-                            <div class="project-card__actions">
-                                <button class="btn btn--primary btn--sm">Live Demo</button>
-                                <button class="btn btn--outline btn--sm">Source Code</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">Missing Brontosaurus</h3>
-                            <p class="project-card__description">Full-featured React website for independent music label, including artist profiles, music streaming, event management, and e-commerce functionality.</p>
-                            <div class="project-card__tech">
-                                <span class="tech-badge">React</span>
-                                <span class="tech-badge">Node.js</span>
-                                <span class="tech-badge">Stripe API</span>
-                                <span class="tech-badge">AWS S3</span>
-                            </div>
-                            <div class="project-card__actions">
-                                <button class="btn btn--primary btn--sm">Live Demo</button>
-                                <button class="btn btn--outline btn--sm">Source Code</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project-card__actions">
+                  <!-- <a href="https://output.com/" target="_blank" class="btn btn--primary btn--sm">Website</a> -->
                 </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Get In Touch</h2>
+            <div class="project-card">
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  QA Community Forum (Internal Project)
+                </h3>
+                <p class="project-card__description">
+                  Platform for QA professionals to share knowledge, discuss
+                  testing strategies, and collaborate on best practices with
+                  user authentication and content moderation.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-badge">Vue.js</span>
+                  <span class="tech-badge">Express.js</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                  <span class="tech-badge">Redis</span>
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">Docker</span>
                 </div>
-                <div class="contact">
-                    <div class="contact__info">
-                        <p class="contact__description">
-                            Ready to discuss opportunities or collaborate on exciting projects? Let's connect and build something amazing together.
-                        </p>
-                        <div class="contact__details">
-                            <div class="contact__item">
-                                <strong>Email:</strong>
-                                <a href="mailto:rachellarralde@gmail.com">rachellarralde@gmail.com</a>
-                            </div>
-                            <div class="contact__item">
-                                <strong>Location:</strong>
-                                <span>Los Angeles, CA</span>
-                            </div>
-                        </div>
-                        <div class="contact__social">
-                            <a href="#" target="_blank" class="btn btn--outline btn--sm">GitHub</a>
-                            <a href="#" target="_blank" class="btn btn--outline btn--sm">LinkedIn</a>
-                            <a href="#" target="_blank" class="btn btn--outline btn--sm">Resume</a>
-                        </div>
-                    </div>
+                <div class="project-card__actions">
+                  <!-- <a href="https://output.com/" target="_blank" class="btn btn--primary btn--sm">Website</a> -->
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Full-Stack Developer Section -->
+      <section id="fullstack" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Full-Stack Development Projects</h2>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-card__content">
+                <h3 class="project-card__title">Portfolio Website</h3>
+                <p class="project-card__description">
+                  Modern, responsive portfolio website built with clean
+                  architecture and design, featuring smooth animations and
+                  optimized performance.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-badge">HTML5</span>
+                  <span class="tech-badge">CSS3</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">GitHub Pages</span>
+                </div>
+                <div class="project-card__actions">
+                  <!-- <button class="btn btn--primary btn--sm">Live Demo</button> -->
+                  <a
+                    href="https://github.com/rachellarralde/portfolio-rvchl"
+                    target="_blank"
+                    class="btn btn--outline btn--sm"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card__content">
+                <h3 class="project-card__title">Flicked</h3>
+                <p class="project-card__description">
+                  iOS mobile application for personalized movie recommendations
+                  using machine learning algorithms and social features for
+                  sharing reviews with friends.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-badge">Swift</span>
+                  <span class="tech-badge">SwiftUI</span>
+                  <span class="tech-badge">Core ML</span>
+                  <span class="tech-badge">Firebase</span>
+                </div>
+                <div class="project-card__actions">
+                  <button class="btn btn--primary btn--sm">Live Demo</button>
+                  <!-- <button class="btn btn--outline btn--sm">Source Code</button> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  Missing Brontosaurus Records
+                </h3>
+                <p class="project-card__description">
+                  Full-featured React website for independent music label,
+                  including artist profiles, music streaming, event management,
+                  and e-commerce functionality.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">Stripe API</span>
+                  <span class="tech-badge">AWS S3</span>
+                </div>
+                <div class="project-card__actions">
+                  <a
+                    href="https://missingbrontosaur.us"
+                    target="_blank"
+                    class="btn btn--primary btn--sm"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Get In Touch</h2>
+          </div>
+          <div class="contact">
+            <div class="contact__info">
+              <p class="contact__description">
+                Ready to discuss opportunities or collaborate on exciting
+                projects? Let's connect and build something amazing together.
+              </p>
+              <div class="contact__details">
+                <div class="contact__item">
+                  <strong>Email:</strong>
+                  <a href="mailto:rachellarralde@gmail.com"
+                    >rlarralde@myyahoo.com</a
+                  >
+                </div>
+                <div class="contact__item">
+                  <strong>Location:</strong>
+                  <span>Los Angeles, CA</span>
+                </div>
+              </div>
+              <div class="contact__social">
+                <a
+                  href="https://github.com/rachellarralde"
+                  target="_blank"
+                  class="btn btn--outline btn--sm"
+                  >GitHub</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/rachellarralde/"
+                  target="_blank"
+                  class="btn btn--outline btn--sm"
+                  >LinkedIn</a
+                >
+                <!-- <a href="rachel-larralde-resume.pdf" target="_blank" class="btn btn--outline btn--sm">Resume</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
